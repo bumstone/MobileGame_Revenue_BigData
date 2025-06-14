@@ -19,7 +19,7 @@
 
 ---
 
-## 🧪 실험코 설명
+## 🧪 실험코드 설명
 
 ### 1. `Game_Revenue_Analysis.ipynb`
 - 장르 및 게임명 표준화
@@ -43,11 +43,14 @@
 
 ## 📈 데이터 설명
 
-| 데이터 파일 | 주요 컬럼 |
-|-------------|------------|
-| `mobile_game_revenue.csv` | Game, Revenue, Genre, Publisher, Release Date |
-| `mobile_game_usercount.csv` | Game Title, Player Count, Publisher, Release Date |
-| `merged_abtest_data.csv` | user_id, testgroup, revenue, reg_date, login_count 등 |
+| 데이터 파일명              | 주요 컬럼 설명 |
+|----------------------------|----------------|
+| `mobile_game_revenue.csv`  | `Game`, `Revenue`, `Genre`, `Publisher`, `Release Date` 등 모바일 게임 매출 관련 원시 데이터 |
+| `mobile_game_usercount.csv`| `Game Title`, `Player Count`, `Publisher`, `Release Date` 등 유저 수 기반 인기 게임 정보 |
+| `merged_abtest_data.csv`   | `user_id`, `testgroup`, `revenue`, `reg_date`, `login_count`, `first_login`, `last_login` 등 통합 A/B 테스트 분석용 데이터 |
+| `ab_test.csv`              | `user_id`, `testgroup` — A/B 테스트 그룹 할당 정보 |
+| `reg_data.csv`             | `user_id`, `reg_date` — 사용자 가입 일자 정보 |
+| `auth_data.csv`            | `user_id`, `login_time` — 유저 로그인 활동 (중복 포함, 로그 단위) |
 
 ---
 
